@@ -45,7 +45,7 @@ auto_arima_forec <- function(x, h) {
 #' @describeIn forec_methods forecast::ets
 #' @export
 ets_forec <- function(x, h) {
-  model <- forecast::ets(x, opt.crit="mae")
+  model <- forecast::ets(x) # undo opt.crit="mae" change for obc implementation
   forecast::forecast(model, h=h)$mean
 }
 

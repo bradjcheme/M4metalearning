@@ -24,7 +24,8 @@ You can install `M4metalearning` from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("robjhyndman/M4metalearning")
+# devtools::install_github("robjhyndman/M4metalearning") # original version
+devtools::install_github("bradjcheme/M4metalearning")    # Patched correct OWA calculations
 ```
 
 ### Note
